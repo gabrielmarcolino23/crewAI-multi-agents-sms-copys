@@ -1,0 +1,112 @@
+copywriter_giftback_task:
+  description: >
+    Crie uma mensagem persuasiva e curta para a campanha de Giftback com o objetivo de: {objetivo_campanha} da {nome_loja}, que opera no segmento de {segmento}.
+    A mensagem deve ser personalizada para o público-alvo {publico_alvo}, utilizando um tom de voz {tom_voz}.
+    O foco da campanha é no uso do Giftback, então a mensagem deve destacar o valor do desconto {{giftback_amount}}, o código {{giftback_code}} e a data de expiração {{giftback_expiry_date}}.
+    Certifique-se de que a mensagem seja clara, impactante e otimizada para envio via SMS.
+    Devido ao limite de 155 caracteres, seja conciso e evite informações desnecessárias.
+    A mensagem deve conter uma chamada para ação direta e urgente.
+    Não utilize quebras de linha ou emojis, pois nem todos os dispositivos as suportam adequadamente em SMS.
+    Evite o uso de linguagem complexa; mantenha a mensagem simples e fácil de entender.
+    Não invente informações sobre a promoção; utilize apenas os inputs fornecidos.
+
+  expected_output: |
+    - Deve conter até 155 caracteres.
+    - A mensagem deve ser persuasiva, clara e otimizada para envio via SMS.
+    - Alinhamento com o tom de voz {tom_voz} e consideração do público-alvo {publico_alvo}.
+    - Utilização correta dos placeholders da mensagem.
+    - Deve incluir uma chamada para ação direta.
+
+copywriter_data_comemorativa_task:
+  description: >
+    Crie uma mensagem persuasiva e curta para a campanha de promoção por data comemorativa com o objetivo de: {objetivo_campanha} da {nome_loja}, que opera no segmento de {segmento}.
+    A mensagem deve ser personalizada para o público-alvo {publico_alvo}, utilizando um tom de voz {tom_voz} específico.
+    A copy deve levar em conta a data comemorativa selecionada, que é a {data_comemorativa}, e incentivar a compra.
+    Certifique-se de que a mensagem seja clara, impactante, e otimizada para o disparo via SMS.
+    Devido ao limite de 155 caracteres, seja conciso e evite informações desnecessárias.
+    A mensagem deve conter uma chamada para ação direta e urgente.
+    Não utilize quebras de linha ou emojis, pois nem todos os dispositivos as suportam adequadamente em SMS.
+    Evite o uso de linguagem complexa; mantenha a mensagem simples e fácil de entender.
+    Não invente informações sobre a promoção; utilize apenas os inputs fornecidas.
+
+  expected_output: |
+    - Deve conter até 155 caracteres.
+    - A mensagem deve ser persuasiva, clara, e otimizada para envio via SMS.
+    - Alinhamento com o tom de voz {tom_voz} e consideração do público-alvo {publico_alvo}.
+    - Utilização correta dos placeholders da mensagem.
+    - Deve incluir uma chamada para ação direta.
+
+copywriter_lancamento_produto_task:
+  description: >
+    Crie uma mensagem persuasiva e curta para a campanha de lançamento do produto {nome_produto} da {nome_loja}, que opera no segmento de {segmento}.
+    A mensagem deve ser personalizada para o público-alvo {publico_alvo}, utilizando um tom de voz {tom_voz}.
+    O foco da campanha é o novo produto {nome_produto}, então a mensagem deve destacar os principais benefícios e características da {descricao_produto}.
+    Certifique-se de que a mensagem seja clara, impactante e otimizada para envio via SMS.
+    Devido ao limite de 155 caracteres, seja conciso e evite informações desnecessárias.
+    A mensagem deve conter uma chamada para ação direta e urgente.
+    Não utilize quebras de linha ou emojis, pois nem todos os dispositivos as suportam adequadamente em SMS.
+    Evite o uso de linguagem complexa; mantenha a mensagem simples e fácil de entender.
+    Não invente informações sobre o produto; utilize apenas os inputs fornecidos.
+
+  expected_output: |
+    - Deve conter até 155 caracteres.
+    - A mensagem deve ser persuasiva, clara e otimizada para envio via SMS.
+    - Alinhamento com o tom de voz {tom_voz} e consideração do público-alvo {publico_alvo}.
+    - Utilização correta dos placeholders da mensagem.
+    - Deve incluir uma chamada para ação direta.
+
+copywriter_lancamento_colecao_task:
+  description: >
+    Crie uma mensagem persuasiva e curta para a campanha de lançamento da coleção {nome_colecao} da {nome_loja}, que opera no segmento de {segmento}.
+    A mensagem deve ser personalizada para o público-alvo {publico_alvo}, utilizando um tom de voz {tom_voz}.
+    O foco da campanha é o lançamento da nova coleção {nome_colecao}, então a mensagem deve destacar as principais tendências e exclusividades da {descricao_colecao}.
+    Certifique-se de que a mensagem seja clara, impactante e otimizada para envio via SMS.
+    Devido ao limite de 155 caracteres, seja conciso e evite informações desnecessárias.
+    A mensagem deve conter uma chamada para ação direta e urgente.
+    Não utilize quebras de linha ou emojis, pois nem todos os dispositivos as suportam adequadamente em SMS.
+    Evite o uso de linguagem complexa; mantenha a mensagem simples e fácil de entender.
+    Não invente informações sobre a coleção; utilize apenas os inputs fornecidos.
+
+  expected_output: |
+    - Deve conter até 155 caracteres.
+    - A mensagem deve ser persuasiva, clara e otimizada para envio via SMS.
+    - Alinhamento com o tom de voz {tom_voz} e consideração do público-alvo {publico_alvo}.
+    - Utilização correta dos placeholders da mensagem.
+    - Deve incluir uma chamada para ação direta.
+
+copywriter_aniversario_cliente_task:
+  description: >
+    Crie uma mensagem personalizada e curta para a campanha de aniversário de cliente da {nome_loja}, que opera no segmento de {segmento}.
+    A mensagem deve ser adaptada ao público-alvo {publico_alvo} e utilizar um tom de voz {tom_voz}.
+    O foco da campanha é celebrar o aniversário do cliente, oferecendo um benefício ou presente, então a mensagem deve ser calorosa e incentivadora.
+    Certifique-se de que a mensagem seja clara, amigável e otimizada para envio via SMS.
+    Devido ao limite de 155 caracteres, seja conciso e evite informações desnecessárias.
+    A mensagem deve conter uma chamada para ação direta e personalizada.
+    Não utilize quebras de linha ou emojis, pois nem todos os dispositivos as suportam adequadamente em SMS.
+    Não invente informações, utilize apenas os inputs fornecidos.
+
+  expected_output: |
+    - Deve conter até 155 caracteres.
+    - A mensagem deve ser amigável, clara e otimizada para envio via SMS.
+    - Alinhamento com o tom de voz {tom_voz} e consideração do público-alvo {publico_alvo}.
+    - Utilização correta dos placeholders da mensagem.
+    - Deve incluir uma chamada para ação direta.
+
+
+copywriter_pos_venda_task:
+  description: >
+    Crie uma mensagem curta e impactante para a campanha de pós-venda com o objetivo de {objetivo_campanha} da {nome_loja}, que opera no segmento de {segmento}.
+    A mensagem deve ser personalizada para o público-alvo {publico_alvo}, utilizando um tom de voz {tom_voz}.
+    O foco da campanha é agradecer o cliente pela compra, oferecer suporte caso necessário e incentivar uma nova compra (quando aplicável).
+    Certifique-se de que a mensagem seja clara, persuasiva e otimizada para envio via SMS.
+    Devido ao limite de 155 caracteres, seja conciso e evite informações desnecessárias.
+    A mensagem deve conter uma chamada para ação direta e personalizada.
+    Não utilize quebras de linha ou emojis, pois nem todos os dispositivos as suportam adequadamente em SMS.
+    Não invente informações sobre a oferta, utilize apenas os inputs fornecidos.
+
+  expected_output: |
+    - Deve conter até 155 caracteres.
+    - A mensagem deve ser clara, persuasiva e otimizada para envio via SMS.
+    - Alinhamento com o tom de voz {tom_voz} e consideração do público-alvo {publico_alvo}.
+    - Utilização correta dos placeholders da mensagem.
+    - Deve conter um agradecimento inicial, reforço de suporte pós-venda e, se aplicável, uma oferta de recompra.
