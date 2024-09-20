@@ -27,10 +27,10 @@ def copywriter_data_comemorativa():
         tools=[variaveis_tool, exemplos_tool],
     )
 
-    copywright_data_comemorativa_task = Task(
-        description=tasks_config['copywright_data_comemorativa_task']['description'],
-        expected_output=tasks_config['copywright_data_comemorativa_task']['expected_output'],
+    copywriter_data_comemorativa_task = Task(
+        description=tasks_config['copywriter_data_comemorativa_task']['description'],
+        expected_output=tasks_config['copywriter_data_comemorativa_task']['expected_output'],
         agent=copywriter_data_comemorativa_agent
     )
 
-    return copywriter_data_comemorativa_agent, copywright_data_comemorativa_task
+    return copywriter_data_comemorativa_agent, copywriter_data_comemorativa_task
