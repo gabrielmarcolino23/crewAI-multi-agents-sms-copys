@@ -22,9 +22,7 @@ def copywriter_giftback():
         role=agents_config["copywriter_giftback"]["role"],
         goal=agents_config["copywriter_giftback"]["goal"],
         backstory=agents_config["copywriter_giftback"]["backstory"],
-        memory=agents_config["copywriter_giftback"]["memory"],
         verbose=agents_config["copywriter_giftback"]["verbose"],
-        stream=agents_config["copywriter_giftback"]["stream"],
         tools=[variaveis_tool,exemplos_tool],
     )
 

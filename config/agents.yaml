@@ -14,9 +14,7 @@ copywriter_giftback:
     Você também tem acesso a um PDF (exemplos_tool) que contém exemplos de várias mensagens de copys. Busque utilizar as mensagens de giftback como inspiração, não as copie diretamente. Utilize esses exemplos como referência para criar mensagens persuasivas e eficazes.
     Lembre-se de que, devido ao limite de caracteres, é crucial ser direto e utilizar chamadas para ação claras.
   verbose: False
-  memory: False
-  stream: True
-  cache: False
+
 
 copywriter_data_comemorativa:
   role: >
@@ -34,9 +32,7 @@ copywriter_data_comemorativa:
     Você também tem acesso a um PDF (exemplos_tool) que contém exemplos de várias mensagens de copys. Busque utilizar as mensagens de data comemorativa como inspiração, não as copie diretamente. Utilize esses exemplos como referência para criar mensagens persuasivas e eficazes.
     Lembre-se de que, devido ao limite de caracteres, é crucial ser direto e utilizar chamadas para ação claras.
   verbose: False
-  memory: False
-  stream: True
-  cache: False
+
 
 copywriter_lancamento_produto:
   role: >
@@ -54,9 +50,7 @@ copywriter_lancamento_produto:
     Você também tem acesso a um PDF (exemplos_tool) que contém exemplos de várias mensagens de copys. Busque utilizar as mensagens de lançamento de produto como inspiração, não as copie diretamente. Utilize esses exemplos como referência para criar mensagens persuasivas e eficazes.
     Lembre-se de que, devido ao limite de caracteres, é crucial ser direto e utilizar chamadas para ação claras.
   verbose: False
-  memory: False
-  stream: True
-  cache: False
+
 
 copywriter_lancamento_colecao:
   role: >
@@ -74,9 +68,7 @@ copywriter_lancamento_colecao:
     Você também tem acesso a um PDF (exemplos_tool) que contém exemplos de várias mensagens de copys. Busque utilizar as mensagens de lançamento de coleção como inspiração, não as copie diretamente. Utilize esses exemplos como referência para criar mensagens persuasivas e eficazes.
     Lembre-se de que, devido ao limite de caracteres, é crucial ser direto e utilizar chamadas para ação claras.
   verbose: False
-  memory: False
-  stream: True
-  cache: False
+ 
 
 copywriter_aniversario_cliente:
   role: >
@@ -94,9 +86,7 @@ copywriter_aniversario_cliente:
     Você também tem acesso a um PDF (exemplos_tool) que contém exemplos de várias mensagens de copys. Busque utilizar as mensagens de aniversário do cliente como inspiração, não as copie diretamente. Utilize esses exemplos como referência para criar mensagens persuasivas e eficazes.
     Lembre-se de que, devido ao limite de caracteres, é crucial ser direto e utilizar chamadas para ação claras.
   verbose: False
-  memory: False
-  stream: True
-  cache: False
+ 
 
   copywriter_pos_venda:
   role: >
@@ -113,7 +103,5 @@ copywriter_aniversario_cliente:
     Você também tem acesso a um PDF (exemplos_tool) que contém exemplos de várias mensagens de pós-venda. Use-o como referência para criar mensagens persuasivas e eficazes, sem copiar diretamente.
     Lembre-se de que, devido ao limite de caracteres, é crucial ser direto e utilizar chamadas para ação claras.
   verbose: False
-  memory: False
-  stream: True
-  cache: False
+
 

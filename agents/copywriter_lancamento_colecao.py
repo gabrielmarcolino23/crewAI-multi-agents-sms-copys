@@ -24,9 +24,7 @@ def copywriter_lancamento_colecao():
         role=agents_config["copywriter_lancamento_colecao"]["role"],
         goal=agents_config["copywriter_lancamento_colecao"]["goal"],
         backstory=agents_config["copywriter_lancamento_colecao"]["backstory"],
-        memory=agents_config["copywriter_lancamento_colecao"]["memory"],
         verbose=agents_config["copywriter_lancamento_colecao"]["verbose"],
-        stream=agents_config["copywriter_lancamento_colecao"]["stream"],
         tools=[variaveis_tool, exemplos_tool],
     )
 

@@ -22,9 +22,7 @@ def copywriter_aniversario_cliente():
         role=agents_config["copywriter_aniversario_cliente"]["role"],
         goal=agents_config["copywriter_aniversario_cliente"]["goal"],
         backstory=agents_config["copywriter_aniversario_cliente"]["backstory"],
-        memory=agents_config["copywriter_aniversario_cliente"]["memory"],
         verbose=agents_config["copywriter_aniversario_cliente"]["verbose"],
-        stream=agents_config["copywriter_aniversario_cliente"]["stream"],
         tools=[variaveis_tool, exemplos_tool],
     )
 

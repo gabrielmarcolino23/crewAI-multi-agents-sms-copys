@@ -21,9 +21,7 @@ def copywriter_data_comemorativa():
         role=agents_config["copywriter_data_comemorativa"]["role"],
         goal=agents_config["copywriter_data_comemorativa"]["goal"],
         backstory=agents_config["copywriter_data_comemorativa"]["backstory"],
-        memory=agents_config["copywriter_data_comemorativa"]["memory"],
         verbose=agents_config["copywriter_data_comemorativa"]["verbose"],
-        stream=agents_config["copywriter_data_comemorativa"]["stream"],
         tools=[variaveis_tool, exemplos_tool],
     )
 
