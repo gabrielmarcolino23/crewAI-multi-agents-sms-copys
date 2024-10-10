@@ -23,6 +23,7 @@ def copywriter_lancamento_produto():
         backstory=agents_config["copywriter_lancamento_produto"]["backstory"],
         verbose=agents_config["copywriter_lancamento_produto"]["verbose"],
         tools=[variaveis_tool, exemplos_tool],
+        llm=llm
     )
 
     copywriter_lancamento_produto_task = Task(

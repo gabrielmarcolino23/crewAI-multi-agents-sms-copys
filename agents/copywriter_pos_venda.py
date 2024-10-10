@@ -23,6 +23,7 @@ def copywriter_pos_venda():
         backstory=agents_config["copywriter_pos_venda"]["backstory"],
         verbose=agents_config["copywriter_pos_venda"]["verbose"],
         tools=[variaveis_tool, exemplos_tool],
+        llm=llm
     )
 
     copywriter_pos_venda_task = Task(

@@ -23,6 +23,7 @@ def copywriter_aniversario_cliente():
         backstory=agents_config["copywriter_aniversario_cliente"]["backstory"],
         verbose=agents_config["copywriter_aniversario_cliente"]["verbose"],
         tools=[variaveis_tool, exemplos_tool],
+        llm=llm
     )
 
     copywriter_aniversario_cliente_task = Task(

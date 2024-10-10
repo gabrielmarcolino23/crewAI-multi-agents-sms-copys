@@ -23,6 +23,7 @@ def copywriter_giftback():
         backstory=agents_config["copywriter_giftback"]["backstory"],
         verbose=agents_config["copywriter_giftback"]["verbose"],
         tools=[variaveis_tool,exemplos_tool],
+        llm=llm
     )
 
     copywriter_giftback_task = Task(

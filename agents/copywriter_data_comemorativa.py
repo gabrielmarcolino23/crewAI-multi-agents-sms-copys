@@ -23,6 +23,7 @@ def copywriter_data_comemorativa():
         backstory=agents_config["copywriter_data_comemorativa"]["backstory"],
         verbose=agents_config["copywriter_data_comemorativa"]["verbose"],
         tools=[variaveis_tool, exemplos_tool],
+        llm=llm
     )
 
     copywriter_data_comemorativa_task = Task(
