@@ -1,24 +1,22 @@
 import yaml
-from crewai import Agent, Task
-from utils.ragExamplesWpp import RagExamplesWpp
-from utils.zoppyVariables_tool import ZoppyVariablesSearchTool
+from crewai import Agent, Task, LLM
+from crewai_tools import PDFSearchTool,DOCXSearchTool
 from dotenv import load_dotenv
-
-load_dotenv()
-
-# Carregar arquivo YAML
-with open("config/agents.yaml", "r", encoding="utf-8") as file:
-    agents_config = yaml.safe_load(file)
-
-with open("config/tasks.yaml", "r", encoding="utf-8") as file:
-    tasks_config = yaml.safe_load(file)
-
-variaveis_tool = ZoppyVariablesSearchTool(pdf="./docs/variaveis.pdf")
-exemplos_tool = RagExamplesWpp(pdf="./docs/exemplos.pdf")  
+load_dotenv() 
 
 def copywriter_lancamento_produto():
 
-    # Criar agentes e tarefas a partir da configuração YAML
+    with open("config/agents.yaml", "r", encoding="utf-8") as file:
+        agents_config = yaml.safe_load(file)
+
+    with open("config/tasks.yaml", "r", encoding="utf-8") as file:
+        tasks_config = yaml.safe_load(file)
+
+    variaveis_tool = PDFSearchTool(pdf="./docs/variaveis.pdf")
+    exemplos_tool = DOCXSearchTool(docx="./docs/exemplos.docx")
+
+    llm = LLM(model="gpt-4o-mini-2024-07-18", temperature=0.0)  
+
     copywriter_lancamento_produto_agent = Agent(
         role=agents_config["copywriter_lancamento_produto"]["role"],
         goal=agents_config["copywriter_lancamento_produto"]["goal"],
@@ -29,9 +27,7 @@ def copywriter_lancamento_produto():
 
     copywriter_lancamento_produto_task = Task(
         description=tasks_config["copywriter_lancamento_produto_task"]["description"],
-        expected_output=tasks_config["copywriter_lancamento_produto_task"][
-            "expected_output"
-        ],
+        expected_output=tasks_config["copywriter_lancamento_produto_task"]["expected_output"],
         agent=copywriter_lancamento_produto_agent,
     )
 
